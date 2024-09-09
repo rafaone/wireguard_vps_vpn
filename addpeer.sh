@@ -87,3 +87,5 @@ export -n SERVER_PUBLIC_KEY
 cat $new_config_file_name  | qrencode -t ANSIUTF8
 # show the config as text
 cat $new_config_file_name
+#cp with config name provided
+cp $new_config_file_name $1.conf
